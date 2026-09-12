@@ -1,0 +1,44 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"description": "Lists and revokes server-side sessions through a transport-neutral store contract",
+	"devDependencies": {
+		"@types/node": "^26.2",
+		"typescript": "^7.0"
+	},
+	"engines": {
+		"node": ">=24"
+	},
+	"exports": "./cjs/session.js",
+	"files": [
+		"docs",
+		"LICENSE",
+		"README.md",
+		"cjs",
+		"!*.map"
+	],
+	"homepage": "https://it.rocks",
+	"keywords": [
+		"authentication",
+		"backend",
+		"it.rocks",
+		"management",
+		"revoke",
+		"security",
+		"session",
+		"session store"
+	],
+	"license": "ISC",
+	"name": "@itrocks/session",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/session.git"
+	},
+	"scripts": {
+		"build": "tsc",
+		"test": "npm run build && node --test --test-isolation=none test/*.test.js"
+	},
+	"version": "0.0.1"
+}
