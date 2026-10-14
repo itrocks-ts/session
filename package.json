@@ -5,7 +5,7 @@
 	},
 	"description": "Lists and revokes server-side sessions through a transport-neutral store contract",
 	"devDependencies": {
-		"@types/node": "^26.2",
+		"@types/node": "^24.10",
 		"typescript": "^7.0"
 	},
 	"engines": {
@@ -40,5 +40,5 @@
 		"build": "tsc",
 		"test": "npm run build && node --test --test-isolation=none test/*.test.js"
 	},
-	"version": "0.0.1"
+	"version": "0.0.2"
 }
